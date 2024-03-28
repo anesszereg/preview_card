@@ -14,6 +14,7 @@ section{
     justify-content: space-between;
     /* align-items: center; */
     background-color: hsl(244, 38%, 16%) ;
+
     border-radius: 20px;
     height: 500px;
     width: 1200px;
@@ -103,24 +104,72 @@ span{
   
 
 }
+.mobile_image{
+    display: none;
+}
+.desktop_image{
+    display: block;
+}
+
+@media screen  and (max-width:375px){
+    
+    .desktop_image{
+        display: none;
+    }
+    .mobile_image{
+        display: block;
+    }
+    body{
+        padding: 40px 10px;
+    }
 
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+    section{
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
 
-.lexend-deca-<uniquifier> {
- 
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-/* 
-.inter-<uniquifier> {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
-   */
+        justify-content:normal;
+    }
+    .infos{
+        height: auto;
+        padding: 20px;
+    }
+    .container{
+        width: 100%;
+        height: 35%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .description{
+        width: 100%;
+    }
+    .card_container{
+        width: 100%;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .card{
+
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .static{
+        font-size: 12px;
+    }
+    .card h1{
+        font-size: 1.2rem;
+    }
+
+
+
+
+  
+}
